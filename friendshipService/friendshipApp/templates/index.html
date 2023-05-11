@@ -12,10 +12,10 @@
             <button type="button" class="btn btn-secondary" onclick="window.location='/register/';">Регистрация</button>
     {% else %}
             <button type="button" class="btn btn-success" onclick="window.location='/users/';">Посмотреть список пользователей</button>
-            <button type="button" class="btn btn-danger">Посмотреть своих друзей</button>
-            <button type="button" class="btn btn-warning">Посмотреть входящие заявки</button>
-            <button type="button" class="btn btn-info">Посмотреть исходящие заявки</button>
-            <button type="button" class="btn btn-light">Посмотреть все заявки</button>
+            <button type="button" class="btn btn-danger" onclick="window.location='/friends/';">Посмотреть своих друзей</button>
+            <button type="button" class="btn btn-warning" onclick="window.location='/received_requests/';">Посмотреть входящие заявки</button>
+            <button type="button" class="btn btn-info" onclick="window.location='/sent_requests/';">Посмотреть исходящие заявки</button>
+            <button type="button" class="btn btn-light" onclick="window.location='/all_requests/';">Посмотреть все заявки</button>
             <button type="button" class="btn btn-danger" onclick="window.location='/logout';">Выйти</button>
     {% endif %}
 </div>

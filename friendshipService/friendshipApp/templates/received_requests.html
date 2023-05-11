@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Входящие заявки</title>
+</head>
+<body>
+    <h1>Входящие заявки {{ user.username }}</h1>
+    {% if received_requests %}
+        <ul>
+            {% for received_request in received_requests %}
+                <li>{{ received_request.receiver_user.username }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>У вас нет входящих заявок :(</p>
+    {% endif %}
+</body>
+</html>

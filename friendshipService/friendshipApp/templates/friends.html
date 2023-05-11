@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ваши друзья</title>
+</head>
+<body>
+    <h1>Друзья {{ user.username }}</h1>
+    {% if friends %}
+        <ul>
+            {% for friend in friends %}
+                <li>{{ friend.username }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>У вас нет друзей :(</p>
+    {% endif %}
+</body>
+</html>

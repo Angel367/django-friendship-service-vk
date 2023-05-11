@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Все заявки</title>
+</head>
+<body>
+    <h1>Все заявки {{ user.username }}</h1>
+    {% if all_requests %}
+        <ul>
+            {% for all_request in all_requests %}
+                <li>{{ all_request.receiver_user.username }}</li>
+                <li>{{ all_request.receiver_user.username }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>У вас никаких заявок :(</p>
+    {% endif %}
+</body>
+</html>
